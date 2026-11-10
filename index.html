@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DINESH Luxury Furniture - Beds, sofas and cushions. Make your home more beautiful.">
+<title>DINESH Luxury Furniture</title>
+<style>
+:root{--gold:#c99a32;--gold2:#f0cf78;--ink:#171512;--cream:#fbf8f1;--muted:#6d685f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Sinhala",sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:5}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1px}
+.mark{width:45px;height:45px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;font-family:Georgia,serif;font-size:28px;color:var(--gold);font-weight:bold}
+.brand small{display:block;font-size:11px;color:var(--gold);letter-spacing:2px;margin-top:3px}
+nav{display:flex;gap:25px;font-size:14px;font-weight:600}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#17130b;padding:13px 21px;border-radius:5px;font-weight:800;box-shadow:0 7px 18px #c99a3230}
+.hero{background:linear-gradient(115deg,#171512 0%,#2b251b 55%,#55401f 100%);color:white;padding:86px 0 78px;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #d7ad503d;border-radius:50%;right:-90px;top:-160px;box-shadow:0 0 0 35px #d7ad5010,0 0 0 75px #d7ad5008}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;position:relative;z-index:1}
+.kicker{color:var(--gold2);text-transform:uppercase;letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:1.02;margin:18px 0 14px}
+h1 span{color:var(--gold2)}.hero p{color:#e4ded2;line-height:1.8;max-width:540px;font-size:17px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn-outline{border:1px solid var(--gold2);color:white;padding:12px 20px;border-radius:5px;font-weight:bold}
+.room{height:330px;border:1px solid #d2a64e88;border-radius:18px;background:linear-gradient(150deg,#eee6d7,#c9b99f 50%,#6b5136);position:relative;overflow:hidden;box-shadow:0 20px 50px #0006}
+.wall{position:absolute;inset:0 0 38% 0;background:linear-gradient(90deg,#d7c5a5,#f2e8d6 48%,#c5ae8c)}
+.floor{position:absolute;bottom:0;left:0;right:0;height:39%;background:linear-gradient(12deg,#806344,#d7c5a5)}
+.window{position:absolute;top:24px;left:28px;width:100px;height:125px;border:8px solid #6b4d2c;background:linear-gradient(90deg,#b6d1d2,#e9f1e8);box-shadow:inset 0 0 0 3px #f8e9c9}
+.sofa{position:absolute;bottom:54px;left:17%;width:68%;height:118px;background:#765039;border-radius:22px 22px 12px 12px;box-shadow:0 16px 0 #4a3022}
+.sofa:before{content:"";position:absolute;left:-17px;right:-17px;bottom:0;height:75px;background:#956c4d;border-radius:16px}
+.sofa:after{content:"";position:absolute;left:12%;top:15px;width:28%;height:53px;background:#c49a64;border-radius:10px;box-shadow:135px 0 0 #c49a64}
+.cushion{position:absolute;bottom:145px;left:34%;width:52px;height:55px;background:#d6b46f;border-radius:8px;transform:rotate(-8deg);box-shadow:75px 5px 0 #e5d3ac}
+.table{position:absolute;bottom:26px;left:38%;width:27%;height:33px;border-radius:50%;background:#3d2b1e;border:4px solid #d2a64e}
+.table:after{content:"";position:absolute;left:45%;top:25px;width:5px;height:30px;background:#3d2b1e}
+section{padding:76px 0}.section-title{text-align:center;margin-bottom:38px}.section-title .kicker{color:var(--gold)}h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,43px);margin:10px 0}.section-title p{color:var(--muted);line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid #eee6d7;border-radius:12px;padding:26px;background:var(--cream);text-align:center}
+.card-icon{width:76px;height:76px;border-radius:50%;margin:0 auto 16px;background:#f2e4c5;color:#91671d;display:grid;place-items:center;font-size:34px}
+.card h3{margin:8px 0;font-family:Georgia,serif;font-size:23px}.card p{color:var(--muted);line-height:1.7;font-size:14px}
+.about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-panel{background:#211d17;color:white;padding:38px;border-radius:14px;border-left:5px solid var(--gold)}
+.about-panel h2{color:var(--gold2)}.about-panel p{line-height:1.9;color:#e6dfd2}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.point{background:#fff;border:1px solid #eee;padding:17px;border-radius:8px;font-weight:bold}.point span{color:var(--gold);margin-right:8px}
+.contact{background:#171512;color:white}.contact .section-title p{color:#cfc7b9}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.contact-item{border:1px solid #5b4b2e;background:#211d17;padding:20px;border-radius:9px}.contact-item small{display:block;color:var(--gold2);letter-spacing:1px;margin-bottom:8px}.contact-item a,.contact-item strong{overflow-wrap:anywhere}
+.contact-actions{text-align:center;margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+footer{background:#0d0c0a;color:#bdb5a7;text-align:center;padding:22px;font-size:13px}
+@media(max-width:760px){.nav{height:auto;padding:14px 0;flex-wrap:wrap}nav{order:3;width:100%;justify-content:space-between;gap:10px;font-size:12px}.nav>.btn{padding:10px 13px;font-size:12px}.hero{padding:60px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.room{height:270px}.cards{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}section{padding:58px 0}.points{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span class="mark">D</span><span>DINESH<small>LUXURY FURNITURE</small></span></a>
+  <nav><a href="#home">මුල් පිටුව</a><a href="#products">අපගේ නිෂ්පාදන</a><a href="#about">අප ගැන</a><a href="#contact">අමතන්න</a></nav>
+  <a class="btn" href="https://wa.me/94770108868">WhatsApp</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><div class="kicker">Comfort · Style · Elegance</div>
+    <h1>DINESH<br><span>Luxury Furniture</span></h1>
+    <p>ඔබේ සිහින නිවසට අලංකාරයත් සුවපහසුවත් එක්කරගන්න. ඔබේ නිවසට ගැළපෙන ඇඳන්, සෝෆා සහ කුෂන් සඳහා අප හා සම්බන්ධ වන්න.</p>
+    <div class="hero-actions"><a class="btn" href="#contact">අදම අමතන්න</a><a class="btn-outline" href="#products">නිෂ්පාදන බලන්න</a></div>
+  </div>
+  <div class="room" role="img" aria-label="Stylized elegant living room with sofa"><div class="wall"></div><div class="window"></div><div class="floor"></div><div class="sofa"></div><div class="cushion"></div><div class="table"></div></div>
+</div></section>
+<section id="products"><div class="wrap">
+  <div class="section-title"><div class="kicker">Our Collection</div><h2>අපගේ නිෂ්පාදන</h2><p>සුවපහසුව, අලංකාරය සහ ඔබේ නිවසේ සුන්දරත්වය වෙනුවෙන්.</p></div>
+  <div class="cards">
+    <article class="card"><div class="card-icon">🛏️</div><h3>ඇඳන්</h3><p>ඔබේ නිදන කාමරයට ගැළපෙන අලංකාර සහ සුවපහසු ඇඳන්.</p></article>
+    <article class="card"><div class="card-icon">🛋️</div><h3>සෝෆා</h3><p>ඔබේ විසිත්ත කාමරයට නව පෙනුමක් එක්කරන සෝෆා.</p></article>
+    <article class="card"><div class="card-icon">🤍</div><h3>කුෂන්</h3><p>ඔබේ ගෘහ භාණ්ඩවලට අමතර අලංකාරයක් එක්කරන කුෂන්.</p></article>
+  </div>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+  <div class="about-panel"><div class="kicker">DINESH Luxury Furniture</div><h2>ඔබේ නිවස තවත් ලස්සන කරමු!</h2><p>ගෘහ භාණ්ඩ තෝරාගැනීමේදී අලංකාරයත් සුවපහසුවත් එකසේ වැදගත්. ඔබට අවශ්‍ය තොරතුරු සහ ඇණවුම් සඳහා අප සමඟ කතා කරන්න.</p><a class="btn" href="tel:0740537538">දුරකථන ඇමතුමක් ලබාගන්න</a></div>
+  <div><div class="kicker">Why Choose Us</div><h2>අලංකාරය සහ සුවපහසුව එකට</h2><div class="points"><div class="point"><span>✦</span>අලංකාර නිමාව</div><div class="point"><span>✦</span>නවීන පෙනුම</div><div class="point"><span>✦</span>සුවපහසු නිර්මාණ</div><div class="point"><span>✦</span>පෞද්ගලික සේවාව</div></div></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap">
+  <div class="section-title"><div class="kicker">Get In Touch</div><h2>අප හා සම්බන්ධ වන්න</h2><p>ඔබේ අවශ්‍යතාවය ගැන කතා කිරීමට අදම අමතන්න.</p></div>
+  <div class="contact-grid">
+    <div class="contact-item"><small>නම</small><strong>DINESH M BANDARA</strong></div>
+    <div class="contact-item"><small>Call</small><a href="tel:0740537538">074 053 7538</a></div>
+    <div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/94770108868">077 010 8868</a></div>
+    <div class="contact-item"><small>Email</small><a href="mailto:dineshluxurefurniture@gmail.com">dineshluxurefurniture@gmail.com</a></div>
+    <div class="contact-item"><small>Facebook</small><a href="https://www.facebook.com/search/top?q=Dinesh%20luxury%20furniture">Dinesh luxury furniture</a></div>
+    <div class="contact-item"><small>Location</small><strong>Kambuhana, Madipola</strong></div>
+  </div>
+  <div class="contact-actions"><a class="btn" href="tel:0740537538">Call Now</a><a class="btn-outline" href="https://wa.me/94770108868">WhatsApp Us</a></div>
+</div></section>
+</main>
+<footer>© <span id="year">2026</span> DINESH Luxury Furniture. All rights reserved.</footer>
+</body></html>
